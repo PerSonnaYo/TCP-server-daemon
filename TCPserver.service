@@ -1,0 +1,14 @@
+[Unit]
+Description=A simple TCP server
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/TCPserver
+ExecReload=/bin/kill -HUP $MAINPID
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
+

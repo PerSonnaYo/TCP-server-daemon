@@ -1,0 +1,8 @@
+[Unit]
+Description=A simple TCP server
+[Socket]
+ListenStream=3015
+[Install]
+WantedBy=sockets.target
+StandardOutput=syslog
+StandardError=syslog
