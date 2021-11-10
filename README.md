@@ -4,7 +4,6 @@ Just a simple TCP server that was daemonized with the Systemd standards.
 # How to install?
 	sudo apt-get install libsystemd-dev
 	make
-	bash client.sh
 
 # How the daemon works?
 	sudo systemctl daemon-reload
