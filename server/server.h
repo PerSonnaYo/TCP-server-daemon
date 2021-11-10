@@ -26,12 +26,11 @@
 #include <netdb.h>
 #include <stdbool.h>
 #define QUEUE_LENGTH 5
-#define MAX_FLOW_SIZE 1000
 
 extern bool end;
-extern char port[6];
+extern char **param;
 
-int initialize_socket();
+int initialize_socket(char **param);
 int establish_connection(int s);
 int socket_close(int s);
 
